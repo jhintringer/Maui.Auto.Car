@@ -29,7 +29,7 @@ public class CarPageHandler : Screen
             return handler.BuildView(VirtualView, (t) =>
             {
                 _nativeTemplate = t;
-                this.DispatchLifecycleEvent(AndroidX.Lifecycle.Lifecycle.Event.OnStart);
+                Invalidate();
             });
         }
         else

@@ -1,8 +1,7 @@
 ﻿using XmlnsPrefixAttribute = Microsoft.Maui.Controls.XmlnsPrefixAttribute;
 
-//Custom xaml schema <see href="https://docs.microsoft.com/pt-br/xamarin/xamarin-forms/xaml/custom-namespace-schemas#defining-a-custom-namespace-schema"/>
-[assembly: XmlnsDefinition("http://schemas.microsoft.com/dotnet/2021/maui", "Maui.Auto.Car")]
+// Custom controls use their own schema; the standard MAUI schema is protected.
 [assembly: XmlnsDefinition("http://autocar.com/schemas/xaml", "Maui.Auto.Car")]
 
-//Recommended prefix <see href="https://docs.microsoft.com/pt-br/xamarin/xamarin-forms/xaml/custom-prefix"/>
-[assembly: XmlnsPrefix("http://maui.autocar.com/schemas/xaml", "car")]
+// Recommended prefix for the custom schema.
+[assembly: XmlnsPrefix("http://autocar.com/schemas/xaml", "car")]
