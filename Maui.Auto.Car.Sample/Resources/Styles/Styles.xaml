@@ -132,7 +132,7 @@
         </Setter>
     </Style>
 
-    <Style TargetType="Border">
+    <Style TargetType="Border" x:Key="RoundedBorderStyle">
         <Setter Property="Stroke" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />
         <Setter Property="StrokeShape" Value="RoundRectangle 8" />
         <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}" />
